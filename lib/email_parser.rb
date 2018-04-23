@@ -5,7 +5,7 @@ class EmailParser
     @emails = emails
   end
   def parse
-    @emails.tr(",", "").split(" ").uniq!
+    @emails.tr(",", "").split(" ").uniq
     binding.pry
   end
 end
